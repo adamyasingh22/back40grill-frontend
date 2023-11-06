@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60vw;
+  background-color: #1D1213;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: 5;
+  transition: all 0.4s ease-in-out;
+}
+.menu ul {
+  width: 100%;
+  text-align: center;
+}
+.menu ul li {
+  color: white;
+  list-style: none;
+  font-size: 25px;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 30px 0;
+  font-family: 'Anton', sans-serif;
+}
+.visible {
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
