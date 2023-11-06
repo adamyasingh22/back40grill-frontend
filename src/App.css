@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Anton', sans-serif;
+  }
+  p {
+    font-family: 'Inter', sans-serif;
+  }
+  .wrapped {
+    z-index: 999;
+  }
+  @media screen and (max-width: 400px) {
+    .low {
+      height: auto;
+    }
+    .low-img {
+      height: 60%;
+      width: 60%;
+      margin-top: 30%;
+    }
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
